@@ -30,14 +30,18 @@ export function Table({ databaseResult }) {
 	return (
 		<>
 			<Filter setFilterData={setFilterData} filterData={filterData} />
-			<table className="table shadow-sm">
-				<TableHeader />
-				<tbody>
-					{users?.map((user) => (
-						<Client key={user.id} user={user} />
-					))}
-				</tbody>
-			</table>
+			{users?.length === 0 ? (
+				<h1>No hay Usuarios</h1>
+			) : (
+				<table className="table shadow-sm">
+					<TableHeader />
+					<tbody>
+						{users?.map((user) => (
+							<Client key={user.id} user={user} />
+						))}
+					</tbody>
+				</table>
+			)}
 			<Pagination
 				users={users}
 				databaseResult={databaseResult}
