@@ -1,0 +1,21 @@
+.user-img{
+    height:40px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+}
+
+.user-img-detail{
+    border: 5px solid rgb(235, 235, 235);
+    height:140px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.modal-detail{
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}

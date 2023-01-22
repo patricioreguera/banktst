@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export function useFetch() {
   const URL = "https://dummyjson.com/users/?limit=100";
-  const [databaseResult, setHttpdatabaseResult] = useState(null);
+  const [databaseResult, setDatabaseResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -18,11 +18,12 @@ export function useFetch() {
                 fullName: ` ${user.firstName} ${user.lastName}`,
                 phone: user.phone,
                 email: user.email,
-                age: user.age
+                card: user.bank.cardType,
+                image: user.image,
             }
             ))
 
-            setHttpdatabaseResult(resultadoMap);
+            setDatabaseResult(resultadoMap);
     } catch (err) {
         setError(err);
     } finally {
