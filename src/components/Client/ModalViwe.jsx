@@ -2,9 +2,10 @@ import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-export const ModalView = ({ show, handleClose, user }) => {
+export const ModalView = ({ show, handleClose, user, saveOnDatabase }) => {
 	return (
-		<Modal show={show} onHide={handleClose}>
+		<Modal show={show} onHide={handleClose} centered>
+			<Modal.Header closeButton></Modal.Header>
 			<Modal.Body className="modal-detail">
 				<img className="user-img-detail" src={user.image} alt={user.fullName} />
 				<div>

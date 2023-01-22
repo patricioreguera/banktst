@@ -6,8 +6,12 @@ import { ModalView } from "./ModalViwe";
 
 export const Client = ({ user }) => {
 	const [show, setShow] = useState(false);
-	const { fullName, email, phone, card } = user;
 
+	const { fullName, email, phone, card, id } = user;
+
+	const handleClose = () => {
+		setShow(false);
+	};
 	return (
 		<>
 			<tr className="text-start">
@@ -24,7 +28,7 @@ export const Client = ({ user }) => {
 					</Button>
 				</td>
 			</tr>
-			<ModalView show={show} handleClose={() => setShow(false)} user={user} />
+			<ModalView show={show} handleClose={handleClose} user={user} />
 		</>
 	);
 };

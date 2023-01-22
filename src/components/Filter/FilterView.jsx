@@ -1,6 +1,12 @@
 import React from "react";
 
-const FilterView = ({ deleteDataInfo, input, handleChange, setDataFilter }) => {
+const FilterView = ({
+	deleteDataInfo,
+	userNameInput,
+	handleChange,
+	setDataFilter,
+	emailUserInput,
+}) => {
 	return (
 		<div className="input-group mb-5 shadow-sm">
 			<button
@@ -12,15 +18,33 @@ const FilterView = ({ deleteDataInfo, input, handleChange, setDataFilter }) => {
 			</button>
 			<input
 				type="text"
-				id="select1"
+				id="User"
 				className="form-control"
-				placeholder="Username"
-				aria-label="Username"
-				value={input}
+				placeholder="Serch by User Name"
+				aria-label="User"
+				value={userNameInput}
 				onChange={handleChange}
 			/>
-			<button className="btn btn-primary" type="button" onClick={setDataFilter}>
-				Find
+			<input
+				type="text"
+				id="email"
+				className="form-control"
+				placeholder="Serch by email"
+				aria-label="email"
+				value={emailUserInput}
+				onChange={handleChange}
+			/>
+			<button
+				className={
+					emailUserInput || userNameInput
+						? "btn btn-primary"
+						: "btn btn-seconday"
+				}
+				type="button"
+				onClick={setDataFilter}
+				disabled={emailUserInput || userNameInput ? false : true}
+			>
+				Serch ...
 			</button>
 		</div>
 	);

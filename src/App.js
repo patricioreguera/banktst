@@ -8,8 +8,8 @@ import Spiner from "./components/Spiner/Spiner";
 import { useState } from "react";
 
 function App() {
-	const [paginationIndex, setPaginationIndex] = useState(10);
-	const { databaseResult, isLoading } = useFetch(paginationIndex);
+	const [paginationIndex, setPaginationIndex] = useState(0);
+	const { databaseResult, isLoading } = useFetch();
 
 	return (
 		<div className="App text-center">
@@ -18,8 +18,7 @@ function App() {
 				{isLoading ? <Spiner /> : <Table 
 				databaseResult={databaseResult} 
 				setPaginationIndex={setPaginationIndex} 
-				paginationIndex={paginationIndex}
-				/>}
+				paginationIndex={paginationIndex}/>}
 			</div>
 		</div>
 	);

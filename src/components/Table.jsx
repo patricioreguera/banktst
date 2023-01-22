@@ -4,23 +4,32 @@ import Pagination from "./Pagination";
 import PaginationControler from "./PaginationControler";
 import TableHeader from "./TableHeader";
 import { Filter } from "./Filter/Filter";
+import { PAGINATION_INDEX } from "../AppSetup";
 
 export function Table({ databaseResult }) {
 	const [users, setusers] = useState(databaseResult);
-	const [filterData, setFilterData] = useState("");
+	const [filterData, setFilterData] = useState();
 	const [paginationIndex, setPaginationIndex] = useState(0);
 
 	useEffect(() => {
 		if (filterData) {
-			const filterResult = databaseResult?.filter((user) => {
+			const filterByName = databaseResult?.filter((user) => {
 				const nameToLowerCase = user.fullName.toLowerCase();
-				return nameToLowerCase.includes(filterData);
+				const emailToLowerCase = user.email.toLowerCase();
+				if (filterData.userInput) {
+					return (
+						nameToLowerCase.includes(filterData.userInput) &&
+						emailToLowerCase.includes(filterData.emailInput)
+					);
+				} else {
+					return emailToLowerCase.includes(filterData.emailInput);
+				}
 			});
-			setusers(filterResult);
+			setusers(filterByName);
 		} else {
 			const usersSlice = databaseResult?.slice(
 				paginationIndex,
-				paginationIndex + 10
+				paginationIndex + PAGINATION_INDEX
 			);
 
 			setusers(usersSlice);

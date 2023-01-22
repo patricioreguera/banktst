@@ -1,11 +1,11 @@
 import React from "react";
+import { PAGINATION_INDEX } from "../AppSetup";
 
 const PaginationControler = ({
 	setPaginationIndex,
 	paginationIndex,
 	databaseResult,
 }) => {
-	const PAGINATION_INDEX = 10;
 	return (
 		<div>
 			<button
