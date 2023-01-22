@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/banktst/static/css/main.a7705424.css",
+    "main.js": "/banktst/static/js/main.2c7add69.js",
+    "static/js/787.9b48bc8d.chunk.js": "/banktst/static/js/787.9b48bc8d.chunk.js",
+    "index.html": "/banktst/index.html",
+    "main.a7705424.css.map": "/banktst/static/css/main.a7705424.css.map",
+    "main.2c7add69.js.map": "/banktst/static/js/main.2c7add69.js.map",
+    "787.9b48bc8d.chunk.js.map": "/banktst/static/js/787.9b48bc8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7705424.css",
+    "static/js/main.2c7add69.js"
+  ]
+}
