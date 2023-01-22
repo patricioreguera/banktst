@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import { Header } from "./components/Header";
+
+import { Table } from "./components/Table";
+import { useFetch } from "./hooks/useFetch";
+import Spiner from "./components/Spiner/Spiner";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const { databaseResult, isLoading } = useFetch();
+
+	return (
+		<div className="App text-center">
+			<Header />
+			<div className="container pt-5 pb-5">
+				{isLoading ? <Spiner /> : <Table databaseResult={databaseResult} />}
+			</div>
+		</div>
+	);
 }
 
 export default App;
