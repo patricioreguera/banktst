@@ -1,21 +1,6 @@
-import { useState } from "react";
+import React from "react";
 
-export function Filter({ setFilterData, filterData }) {
-	const [input, setInput] = useState("");
-
-	const setDataFilter = () => {
-		setFilterData(input);
-	};
-
-	const deleteDataInfo = () => {
-		setFilterData("");
-		setInput("");
-	};
-
-	function handleChange(e) {
-		setInput(e.target.value);
-	}
-
+const FilterView = ({ deleteDataInfo, input, handleChange, setDataFilter }) => {
 	return (
 		<div className="input-group mb-5 shadow-sm">
 			<button
@@ -34,10 +19,11 @@ export function Filter({ setFilterData, filterData }) {
 				value={input}
 				onChange={handleChange}
 			/>
-
 			<button className="btn btn-primary" type="button" onClick={setDataFilter}>
 				Find
 			</button>
 		</div>
 	);
-}
+};
+
+export default FilterView;

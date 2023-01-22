@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import PaginationControler from "./PaginationControler";
 import TableHeader from "./TableHeader";
-import { Filter } from "./Filter";
+import { Filter } from "./Filter/Filter";
 
 export function Table({ databaseResult }) {
 	const [users, setusers] = useState(databaseResult);
@@ -42,6 +42,7 @@ export function Table({ databaseResult }) {
 				users={users}
 				databaseResult={databaseResult}
 				paginationIndex={paginationIndex}
+				filterData={filterData}
 			/>
 			<PaginationControler
 				setPaginationIndex={setPaginationIndex}
