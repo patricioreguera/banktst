@@ -27,12 +27,14 @@ export function Filter({ setFilterData, filterData }) {
 	}
 
 	return (
-		<FilterView
-			deleteDataInfo={deleteDataInfo}
-			userNameInput={userNameInput}
-			emailUserInput={emailUserInput}
-			handleChange={handleChange}
-			setDataFilter={setDataFilter}
-		/>
+		<>
+			<FilterView
+				deleteDataInfo={deleteDataInfo}
+				userNameInput={userNameInput}
+				emailUserInput={emailUserInput}
+				handleChange={handleChange}
+				setDataFilter={setDataFilter}
+			/>
+		</>
 	);
 }
