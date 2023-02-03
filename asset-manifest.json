@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/banktst/static/css/main.807acf03.css",
-    "main.js": "/banktst/static/js/main.f4e85d17.js",
+    "main.css": "/banktst/static/css/main.d452cf8f.css",
+    "main.js": "/banktst/static/js/main.0c35a651.js",
     "static/js/787.9b48bc8d.chunk.js": "/banktst/static/js/787.9b48bc8d.chunk.js",
+    "static/media/hello.ttf": "/banktst/static/media/hello.19753d9bf806586a2d64.ttf",
     "static/media/back-logo.png": "/banktst/static/media/back-logo.9534aacef78b53fbf4bd.png",
     "index.html": "/banktst/index.html",
-    "main.807acf03.css.map": "/banktst/static/css/main.807acf03.css.map",
-    "main.f4e85d17.js.map": "/banktst/static/js/main.f4e85d17.js.map",
+    "main.d452cf8f.css.map": "/banktst/static/css/main.d452cf8f.css.map",
+    "main.0c35a651.js.map": "/banktst/static/js/main.0c35a651.js.map",
     "787.9b48bc8d.chunk.js.map": "/banktst/static/js/787.9b48bc8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.807acf03.css",
-    "static/js/main.f4e85d17.js"
+    "static/css/main.d452cf8f.css",
+    "static/js/main.0c35a651.js"
   ]
 }
