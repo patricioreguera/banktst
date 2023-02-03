@@ -1,1 +1,1 @@
-export const PAGINATION_INDEX = 6;
+export const PAGINATION_INDEX = 7;

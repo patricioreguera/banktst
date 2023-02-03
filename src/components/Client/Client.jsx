@@ -7,7 +7,7 @@ import { ModalView } from "./ModalViwe";
 export const Client = ({ user }) => {
 	const [show, setShow] = useState(false);
 
-	const { fullName, email, phone, card, id } = user;
+	const { fullName, email, phone, card, id, cardNumber, cardExpire } = user;
 
 	const handleClose = () => {
 		setShow(false);
@@ -18,7 +18,8 @@ export const Client = ({ user }) => {
 				<td>{fullName}</td>
 				<td>{email}</td>
 				<td>{phone}</td>
-				<td>{card}</td>
+				<td>{cardNumber}</td>
+				<td>{cardExpire}</td>
 				<td>
 					<Button
 						variant="btn btn-outline-primary"

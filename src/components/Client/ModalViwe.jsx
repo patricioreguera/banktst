@@ -32,22 +32,33 @@ export const ModalView = ({ show, handleClose, user, saveOnDatabase }) => {
 					<spam className="spam-details">
 						<BsEnvelopeFill /> Email:
 					</spam>
-					<h5>{user.email}</h5>
+					<h6>{user.email}</h6>
 					<spam className="spam-details">
 						<BsFillTelephoneFill /> Phone:
 					</spam>
-					<h5>{user.phone}</h5>
+					<h6>{user.phone}</h6>
 					<spam className="spam-details">
 						<BsFillCreditCard2BackFill /> Card Type:
 					</spam>
-					<h5>{user.card}</h5>
+					<h6>{user.card}</h6>
+					<spam className="spam-details">
+						<BsFillCreditCard2BackFill /> Card Number:
+					</spam>
+					<h6>{user.cardNumber}</h6>
+					<spam className="spam-details">
+						<BsFillCreditCard2BackFill /> Expire:
+					</spam>
+					<h6>{user.cardExpire}</h6>
 				</div>
 			</Modal.Body>
-			{/* 		<Modal.Footer>
+			<Modal.Footer>
 				<Button variant="primary" onClick={handleClose}>
-				Close
+					Close
 				</Button>
-			</Modal.Footer> */}
+				<Button variant="primary" onClick={handleClose}>
+					Save as Favorite
+				</Button>
+			</Modal.Footer>
 		</Modal>
 	);
 };

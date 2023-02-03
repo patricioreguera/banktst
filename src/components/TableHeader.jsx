@@ -7,7 +7,8 @@ const TableHeader = () => {
 				<th scope="col-1">Name / Last Name</th>
 				<th scope="col-1">Email</th>
 				<th scope="col-1">Phone</th>
-				<th scope="col-1">Card Type</th>
+				<th scope="col-1">cardNumber</th>
+				<th scope="col-1">cardExpire</th>
 				<th scope="col-3"></th>
 			</tr>
 		</thead>
