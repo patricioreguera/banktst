@@ -12,7 +12,7 @@ export function useFetch() {
 			try {
 				const response = await fetch(URL);
 				const responseData = await response.json();
-				console.log(responseData);
+
 				const resultadoMap = responseData.users.map((user) => ({
 					id: user.id,
 					fullName: ` ${user.firstName} ${user.lastName}`,
