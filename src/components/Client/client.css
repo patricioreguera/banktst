@@ -5,8 +5,10 @@
 }
 
 .user-img-detail{
-    border: 5px solid rgb(235, 235, 235);
-    height:140px;
+   
+    max-height: 170px;
+    max-width: 170px;
+    margin-top: -15px;
     background-color: rgb(241, 241, 241);
     border-radius: 50%;
     margin-right: 30px;
@@ -18,4 +20,16 @@
     display: flex;
     align-items: center;
     
+}
+
+.btn-close{
+    height: 8px;
+    width: 8px;
+   background-color: rgb(255, 255, 255);
+   
+}
+
+.spam-details{
+    color: rgb(158, 158, 158)!important;
+    height: 20px;
 }

@@ -44,7 +44,7 @@ export function Table({ databaseResult }) {
 			) : (
 				<table className="table shadow-sm">
 					<TableHeader />
-					<tbody>
+					<tbody className="table-group-divider">
 						{users?.map((user) => (
 							<Client key={user.id} user={user} />
 						))}
