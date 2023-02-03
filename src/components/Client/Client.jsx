@@ -7,7 +7,7 @@ import { ModalView } from "./ModalViwe";
 export const Client = ({ user }) => {
 	const [show, setShow] = useState(false);
 
-	const { fullName, email, phone, card, id, cardNumber, cardExpire } = user;
+	const { fullName, email, phone, cardNumber, cardExpire } = user;
 
 	const handleClose = () => {
 		setShow(false);

@@ -3,3 +3,23 @@ background-color: rgb(246, 246, 246) !important;
 border: 1px solid gray !important;
 box-shadow: none !important;
 }
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 11px 0px rgb(6, 6, 6);
+   color: rgb(7, 185, 255);
+    border-radius: 15px;
+    margin: 0px 10px;
+    padding: 20px 20px;
+}
+
+.cards:hover{
+background-color: rgb(43, 43, 43);
+}
+
+.cards h6 {
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+}
