@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/banktst/static/css/main.c05f6699.css",
-    "main.js": "/banktst/static/js/main.d2697681.js",
+    "main.js": "/banktst/static/js/main.2a106ea7.js",
     "static/js/787.9b48bc8d.chunk.js": "/banktst/static/js/787.9b48bc8d.chunk.js",
     "static/media/back-logo.png": "/banktst/static/media/back-logo.9534aacef78b53fbf4bd.png",
     "index.html": "/banktst/index.html",
     "main.c05f6699.css.map": "/banktst/static/css/main.c05f6699.css.map",
-    "main.d2697681.js.map": "/banktst/static/js/main.d2697681.js.map",
+    "main.2a106ea7.js.map": "/banktst/static/js/main.2a106ea7.js.map",
     "787.9b48bc8d.chunk.js.map": "/banktst/static/js/787.9b48bc8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c05f6699.css",
-    "static/js/main.d2697681.js"
+    "static/js/main.2a106ea7.js"
   ]
 }
