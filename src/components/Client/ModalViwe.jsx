@@ -55,9 +55,6 @@ export const ModalView = ({ show, handleClose, user, saveOnDatabase }) => {
 				<Button variant="primary" onClick={handleClose}>
 					Close
 				</Button>
-				<Button variant="primary" onClick={handleClose}>
-					Save as Favorite
-				</Button>
 			</Modal.Footer>
 		</Modal>
 	);
