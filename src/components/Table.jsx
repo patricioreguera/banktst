@@ -40,7 +40,7 @@ export function Table({ databaseResult }) {
 		<>
 			<Filter setFilterData={setFilterData} filterData={filterData} />
 			{users?.length === 0 ? (
-				<h1>No hay Usuarios</h1>
+				<h1>No Users</h1>
 			) : (
 				<table className="table shadow-sm">
 					<TableHeader />
